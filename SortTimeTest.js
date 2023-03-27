@@ -1,0 +1,18 @@
+"use strict";
+exports.__esModule = true;
+var SortTime_1 = require("./SortTime");
+var st = new SortTime_1.SortingTime();
+var data = st.random_Num(10000);
+var startTime, stopTime;
+startTime = Date.now();
+var result1 = st.bubble_sort(st.copyArray(data));
+stopTime = Date.now();
+console.info("Bubble sort speed :", stopTime - startTime);
+startTime = Date.now();
+var result2 = st.insertion_sort(st.copyArray(data));
+stopTime = Date.now();
+console.info("Insertion sort speed :", stopTime - startTime);
+startTime = Date.now();
+var result3 = st.shell_sort(st.copyArray(data));
+stopTime = Date.now();
+console.info("Shell sort speed :", stopTime - startTime);
