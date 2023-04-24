@@ -18,3 +18,8 @@ startTime = Date.now()
 let result3 = st.shell_sort(st.copyArray(data))
 stopTime = Date.now()
 console.info("Shell sort speed :", stopTime - startTime)
+
+//ไว้แสดงว่าทุก sort ใช้ data เดียวกัน
+// console.info("Bubble sort result :", st.copyArray(data))
+// console.info("Insertion sort result :", st.copyArray(data))
+// console.info("Shell sort result :", st.copyArray(data))
